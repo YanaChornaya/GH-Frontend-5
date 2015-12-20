@@ -1,0 +1,34 @@
+.services {
+  background-color: #e8e8e8;
+}
+ .services-list {
+   text-align: center;
+   li {
+     width: 290px;
+     margin: 0 auto 25px auto;
+     h4 {
+       font: 400 24px Quicksand, Arial, sans-serif;
+       margin: 5px 0 10px;
+     }
+     p {
+       font-size: 13px;
+     }
+   }
+ }
+
+
+@media screen and (min-width: 768px) {
+  .services {
+    padding-bottom: 90px;
+    .services-list li {
+      margin: 0;
+      @include span(4 of 12);
+      &:last-child {
+        @include span(4 of 12 last);
+      }
+      p {
+        padding: 0 20px;
+      }
+    }
+  }
+}

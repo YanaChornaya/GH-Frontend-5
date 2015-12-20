@@ -1,0 +1,40 @@
+.news {
+  background-color: #ff5959;
+  color: #fff;
+  .news-list {
+    line-height: 24px;
+    li {
+      width: 300px;
+      margin: 0 auto 25px;
+      h4 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      span {
+        margin: 10px 0 15px;
+      }
+      .news-author {
+        margin-top: 15px;
+        li {
+          display: inline;
+          margin-right: 50px;
+          &:hover {
+            color: #000;
+          }
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .news .news-list > li {
+    @include span (4 of 12);
+    &:last-child {
+      @include span (4 of 12 last);
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.hero {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  h2,h3 {
+    font: 700 36px DroidSans, Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  p {
+    max-width: 450px;
+    margin: 20px auto 0;
+  }
+  .team-button,.contact-button {
+    display: inline-block;
+    width: 170px;
+    height: 42px;
+    margin-top: 30px;
+    padding-top: 10px;
+    font: 700 18px DroidSans, Arial, sans-serif;
+    background-color: #ff5959;
+    border: 2px solid #ff5959 ;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+  .team-button:hover {
+    background-color: transparent;
+  }
+
+  .contact-button {
+    background-color: transparent;
+    &:hover {
+      background-color: #ff5959;
+    }
+  }
+  .computer {
+    display: block;
+    margin: 25px auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 200px 0 250px;
+    .hero-text {
+      @include span(6 of 12);
+      text-align: left;
+      h2 {
+        font-size: 72px;
+      }
+      h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .team-button {
+      float: left;
+    }
+
+    .contact-button {
+      float: left;
+      margin-left: 25px;
+    }
+
+    .computer {
+      @include span(6 of 12 last);
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import "compass/reset";
+@import "grids";
+@import "fonts";
+@import "layout/header";
+@import "layout/footer";
+@import "landing/hero";
+@import "landing/services";
+@import "landing/portfolio";
+@import "landing/team";
+@import "landing/news";
+@import "landing/contact";
+
+@include border-box-sizing;
+
+.wrapper {
+  @include container;
+  padding: 60px 10px;
+}
+
+body {
+  font: 300 13px Quicksand,Arial,sans-serif;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+  font: 400 30px Quicksand, Arial, sans-serif;
+  line-height: 49px;
+  text-align: center;
+}
+
+.pentagon-b, .pentagon-w {
+  position: relative;
+  display: block;
+  width: 50px;
+  margin: 25px auto 55px;
+  text-align: center;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    border-bottom: 1px solid #8b8b8b;
+  }
+  &:before {
+    right: 100%;
+  }
+  &:after {
+    left: 100%;
+  }
+}
+
+.pentagon-w {
+ &:before,
+  &:after {
+    content: "";
+    border-bottom: 1px solid #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pentagon-b, .pentagon-w {
+    &:before,
+    &:after {
+      content: "";
+      width: 200px;
+    }
+  }
+}
+
+*:hover {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+
+

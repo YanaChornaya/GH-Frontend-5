@@ -1,0 +1,47 @@
+.features {
+  text-align: center;
+    .features-list li {
+     width: 300px;
+     margin: 0 auto 35px;
+      .fa {
+        font-size: 45px;
+        width: 100px;
+        height: 100px;
+        line-height: 95px;
+        border-radius: 2px;
+        color: #fff;
+        background: -webkit-linear-gradient(right, #48baff, #5fc3ff);
+        background: -o-linear-gradient (right, #48baff, #5fc3ff);
+        background: -moz-linear-gradient(right, #48baff, #5fc3ff);
+        background: linear-gradient(to right, #48baff, #5fc3ff);
+        &:hover {
+          background: #fff;
+          color: #5fc3ff;
+        }
+      }
+      h4 {
+        color: #2d3950;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 10px 0;
+      }
+      p {
+        padding: 0 25px;
+        font-size: 15px;
+        line-height: 22px;
+      }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .features .features-list li {
+    @include span (4 of 12);
+    &:last-child {
+      @include span (4 of 12 last);
+    }
+    h4 {
+      margin: 20px 0;
+    }
+  }
+}

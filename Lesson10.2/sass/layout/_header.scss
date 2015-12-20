@@ -1,0 +1,48 @@
+header {
+  height: 55px;
+  background-color: #ff5959;
+  text-align: center;
+  .wrapper {
+    padding: 0;
+    .logo {
+      display: block;
+    }
+     nav {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slicknav_menu {
+    display: none;
+  }
+  header {
+    height: 110px;
+    padding-top: 30px;
+    .wrapper {
+      .logo {
+        float: left;
+      }
+      nav {
+        display: inline-block;
+        float: right;
+        li {
+          float: left;
+          margin-right: 15px;
+          a {
+            padding: 8px 12px;
+            color: #e8e8e8;
+            font: 700 14px Quicksand, Arial, sans-serif;
+            line-height: 49px;
+            &:hover {
+              background-color: #fc7d7d;
+              border-radius: 10px;
+              transition: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

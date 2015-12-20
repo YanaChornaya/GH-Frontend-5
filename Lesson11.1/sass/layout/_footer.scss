@@ -1,0 +1,41 @@
+footer {
+  background-color: #f6f9f9;
+  text-align: center;
+  .wrapper {
+    padding: 38px 10px;
+    .social-network {
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+      li {
+        display: inline;
+        .fa {
+          width: 40px;
+          height: 40px;
+          line-height: 38px;
+          font-size: 15px;
+          background-color: #15a4fa;
+          border-radius: 2px;
+          &:hover {
+            color: #15a4fa;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .wrapper {
+    .social-network {
+      display: inline-block;
+      float: right;
+      margin-bottom: 0;
+    }
+    .copyright {
+      float: left;
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.team {
+  background-color: #e8e8e8;
+  .team-list {
+    text-align: center;
+    li {
+      width: 250px;
+      margin: 0 auto 25px;
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      span {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .social {
+        margin-top: 15px;
+        li {
+          display: inline;
+          margin-right: 10px;
+          .fa {
+            width: 25px;
+            height: 25px;
+            line-height: 15px;
+            font-size: 13px;
+            padding: 5px;
+            border-radius: 100%;
+          }
+          .fa-twitter {
+            background-color: #7ACDF1;
+            &:hover {
+              background-color: #fff;
+              color: #7ACDF1;
+            }
+          }
+          .fa-pinterest {
+            background-color: #EB5756;
+            &:hover {
+              background-color: #fff;
+              color: #EB5756;
+            }
+          }
+          .fa-facebook {
+            background-color: #547BBD;
+            &:hover {
+              background-color: #fff;
+              color: #547BBD;
+            }
+          }
+          .fa-google-plus {
+            background-color: #4C4C4C;
+            &:hover {
+              background-color: #fff;
+              color: #4C4C4C;
+            }
+          }
+          .fa-linkedin {
+            background-color: #1385C8;
+            &:hover {
+              background-color: #fff;
+              color: #1385C8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team .team-list > li {
+    @include span (3 of 12);
+    &:last-child {
+      @include span (3 of 12 last);
+    }
+  }
+}
+
+
