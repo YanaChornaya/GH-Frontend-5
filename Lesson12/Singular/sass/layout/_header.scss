@@ -1,0 +1,52 @@
+header {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  z-index: 9999;
+  .container {
+    padding: 50px 10px 0;
+  }
+  h1 {
+    float: left;
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 17px;
+      text-transform: uppercase;
+      img {
+        margin-left: 10px;
+      }
+    }
+    .logo-description {
+      display: block;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 17px;
+      text-transform: uppercase;
+    }
+  }
+  nav {
+    position: relative;
+    float: right;
+    margin-right: 35px;
+    .dropdown-toggle {
+      .fa {
+        font-size: 25px;
+      }
+    }
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      display: none;
+      li {
+        margin-bottom: 5px;
+      }
+      }
+    }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 100px;
+  }
+}

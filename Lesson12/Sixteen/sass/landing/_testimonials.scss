@@ -1,0 +1,123 @@
+.testimonials {
+  position: relative;
+  background: url(../images/testimonials.jpg);
+  background-size: cover;
+  color: #f7f7f7;
+  z-index: 2;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 59, 69, 0.7);
+    z-index: -1;
+  }
+  .block1 {
+    text-align: center;
+    h4 {
+      font: 400 30px SourceSansPro;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+    p {
+      font: 400 18px SourceSansPro;
+    }
+    .give-testimonials {
+      display: inline-block;
+      width: 200px;
+      height: 40px;
+      margin: 50px 0 25px;
+      color: #acd373;
+      font: 18px italic DroidSerif;
+      line-height: 40px;
+      border: 1px solid #acd373;
+      border-right: none;
+      border-left: none;
+      text-align: center;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+  .block2 {
+    text-align: center;
+    .person1, .person2 {
+      text-align: center;
+    }
+    p {
+      position: relative;
+      width: 250px;
+      height: 120px;
+      margin: 30px auto;
+      padding: 10px 10px 0;
+      font: 400 13px DroidSerif;
+      border: 1px solid #f7f7f7;
+      &:after {
+        content: "\201d";
+        position: absolute;
+        opacity: 0.4;
+        color: #f7f7f7;
+        font: 400 60px DroidSerif;
+        top: 70px;
+        right: 30px;
+      }
+    }
+    h4 {
+      font: 700 18px SourceSansPro;
+      margin-top: 10px;
+      color: #acd373;
+    }
+    a {
+      font: italic 18px DroidSerif;
+      opacity: 0.85;
+      color: #f7f7f7;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .testimonials .block2 {
+      p {
+        width: 370px;
+        font-size: 16px;
+      }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials {
+    .block1 {
+      @include span(4);
+      text-align: left;
+    }
+    .block2 {
+      @include span(8 last);
+      .person1 {
+        @include span(6);
+      }
+      .person2 {
+        @include span(6 last);
+      }
+      p {
+          position: relative;
+          width: 250px;
+          font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .testimonials .block2 p {
+    width: 370px;
+    padding: 26px 24px 0 13px;
+    font-size: 16px;
+  }
+}

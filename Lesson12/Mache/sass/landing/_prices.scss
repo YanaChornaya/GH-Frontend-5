@@ -1,0 +1,67 @@
+.prices {
+  background-color: #f4f4f4;
+  text-align: center;
+  p {
+    max-width: 681px;
+    margin: 0 auto;
+  }
+  .prices-list {
+    margin-top: 50px;
+    text-align: center;
+    >li {
+      width: 262px;
+      display: inline-block;
+      padding: 33px 0;
+      margin: 25px 10px 0;
+      &:nth-child(odd) {
+        background: -webkit-linear-gradient(top, #5a5a5a, #5a5a5a 30%, #fff 30%, #fff);
+        background: -o-linear-gradient (top, #5a5a5a, #5a5a5a 30%, #fff 30%, #fff);
+        background: -moz-linear-gradient(top, #5a5a5a, #5a5a5a 30%, #fff 30%, #fff);
+        background: linear-gradient(top, #5a5a5a, #5a5a5a 30%, #fff 30%, #fff);
+      }
+      &:nth-child(even) {
+        background: -webkit-linear-gradient(top, #ed145b, #ed145b 30%, #fff 30%, #fff);
+        background: -o-linear-gradient (top, #ed145b, #ed145b 30%, #fff 30%, #fff);
+        background: -moz-linear-gradient(top, #ed145b, #ed145b 30%, #fff 30%, #fff);
+        background: linear-gradient(top, #ed145b, #ed145b 30%, #fff 30%, #fff);
+      }
+      .number {
+        display: inline-block;
+        color: #f4f4f4;
+        font: 700 50px Lato, sans-serif;
+        line-height: 38px;
+        &:before {
+          content: "$";
+          font: 700 20px Lato, sans-serif;
+          vertical-align: middle;
+          margin-right: 5px;
+          color: #f4f4f4;
+        }
+      }
+      .per-month {
+        display: block;
+        font: 700 15px Lato;
+        color: #f4f4f4;
+      }
+      .button-type {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        margin-top: 22px;
+        background-color: #f4f4f4;
+        border-radius: 24px;
+        font: 700 15px Lato, sans-serif;
+        color: #5a5a5a;
+        line-height: 48px;
+        text-transform: uppercase;
+      }
+      .description {
+        margin: 35px 0;
+        li {
+          line-height: 38px;
+        }
+      }
+    }
+  }
+}
+

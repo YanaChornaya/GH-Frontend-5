@@ -1,0 +1,104 @@
+.team {
+  text-align: center;
+  .section-title {
+    color: #222;
+  }
+  p {
+    max-width: 710px;
+    margin: 0 auto;
+    color: #222;
+    font: 300 15px OpenSans, sans-serif;
+    line-height: 25px;
+  }
+  .team-list {
+    margin-top: 50px;
+    li {
+      .team-img {
+        position: relative;
+        max-width: 263px;
+        max-height: 351px;
+        margin: 0 auto 20px;
+        &:hover .team-hover {
+          opacity: 1;
+        }
+        .team-hover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          text-align: center;
+          background-color: rgba(34, 34, 34, 0.5);
+          -webkit-transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -o-transition: all 1s ease;
+          transition: all 1s ease;
+          .name {
+            display: block;
+            margin-top: 250px;
+            font: 400 23px OpenSans, sans-serif;
+            line-height: 35px;
+          }
+          .work {
+            font: 400 18px OpenSans, sans-serif;
+            line-height: 35px;
+          }
+        }
+      }
+      &:last-child {
+        .team-img {
+          background-color: white;
+          border: 1px solid #222;
+          text-align: center;
+          span {
+            display: inline-block;
+            max-width: 76px;
+            margin-top: 98px;
+            color: #222;
+            font: 400 23px OpenSans;
+            line-height: 35px;
+          }
+          .apply {
+            display: block;
+            margin: 79px auto 57px;
+            width: 179px;
+            height: 59px;
+            color: #222;
+            font: 700 23px OpenSans;
+            line-height: 50px;
+            border: 3px solid #222;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+            &:hover {
+              border: 3px dashed #222;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .team {
+    p {
+      font-size: 22px;
+      line-height: 36px;
+    }
+    .team-list {
+      margin-top: 95px;
+      li {
+        @include gallery(6 of 12);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .team .team-list li {
+    @include gallery(3 of 12);
+  }
+}

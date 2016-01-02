@@ -1,0 +1,58 @@
+.download {
+  position: relative;
+  background: url(../images/download-bg.jpg);
+  background-size: cover;
+  text-align: center;
+  z-index: 2;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.5);
+    z-index: -1;
+  }
+  p {
+    max-width: 761px;
+    margin: 0 auto;
+    font: 300 15px OpenSans,sans-serif;
+    text-align: justify;
+    line-height: 25px;
+  }
+  .free-download {
+    display: block;
+    margin: 40px auto 0;
+    width: 200px;
+    height: 50px;
+    font: 400 20px OpenSans,sans-serif;
+    border: 3px solid white;
+    line-height: 45px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+   }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .download {
+    p {
+      font-size: 20px;
+      text-align: center;
+      line-height: 36px;
+    }
+    .free-download {
+      margin-top: 80px;
+      width: 390px;
+      height: 80px;
+      font-size: 30px;
+      line-height: 75px;
+    }
+  }
+}

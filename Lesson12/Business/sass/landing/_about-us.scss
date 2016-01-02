@@ -1,0 +1,24 @@
+.about-us {
+  .about-us-list {
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 15px 25px;
+      h3 {
+        font: 700 22px HelveticaNeue, sans-serif;
+        margin: 20px 0 15px;
+        color: #424242;
+      }
+      p {
+        max-width: 238px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us .about-us-list li {
+    @include gallery(4);
+  }
+}

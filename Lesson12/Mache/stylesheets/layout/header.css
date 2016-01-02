@@ -1,0 +1,63 @@
+/* line 1, ../../sass/layout/header.scss */
+header {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+}
+/* line 6, ../../sass/layout/header.scss */
+header .container {
+  padding: 40px 10px 0;
+}
+/* line 9, ../../sass/layout/header.scss */
+header .logo {
+  display: block;
+  font: 900 25px ProximaNova, sans-serif;
+  text-align: center;
+}
+/* line 13, ../../sass/layout/header.scss */
+header .logo:before {
+  content: "///";
+  color: #ed145b;
+}
+/* line 18, ../../sass/layout/header.scss */
+header nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 24, ../../sass/layout/header.scss */
+  .slicknav_menu {
+    display: none;
+  }
+
+  /* line 28, ../../sass/layout/header.scss */
+  header .logo {
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+  }
+  /* line 33, ../../sass/layout/header.scss */
+  header nav {
+    float: right;
+    display: inline-block;
+  }
+  /* line 36, ../../sass/layout/header.scss */
+  header nav li {
+    display: inline;
+    margin-right: 15px;
+  }
+  /* line 39, ../../sass/layout/header.scss */
+  header nav li:last-child {
+    margin-right: 0;
+  }
+  /* line 42, ../../sass/layout/header.scss */
+  header nav li a {
+    font: 700 16px Lato, sans-serif;
+    line-height: 38px;
+  }
+  /* line 45, ../../sass/layout/header.scss */
+  header nav li a:hover {
+    color: #ed145b;
+  }
+}

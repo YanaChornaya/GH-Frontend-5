@@ -1,0 +1,82 @@
+.team {
+  background-color: #acd373;
+  .section-title, .quote {
+    color: #fff;
+  }
+  .team-list {
+    margin-top: 100px;
+    text-align: center;
+    >li {
+      position: relative;
+      display: inline-block;
+      width: 240px;
+      height: 247px;
+      margin: 0 10px 100px;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 150px;
+      }
+      .team-about {
+        .name {
+          display: block;
+          margin-top: 103px;
+          color: #acd373;
+          font: 700 20px SourceSansPro;
+        }
+        .work {
+          display: inline-block;
+          margin: 17px 0 30px;
+          color: #787878;
+          font: italic 16px DroidSerif;
+        }
+      }
+      .social {
+        position: relative;
+        padding-top: 20px;
+        z-index: 2;
+        li {
+          display: inline-block;
+          .fa {
+            width: 28px;
+            height: 28px;
+            line-height: 27px;
+            background-color: #525252;
+            color: #ebebeb;
+            border-radius: 100%;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+            &:hover {
+              color: #525252;
+              background-color: transparent;
+            }
+          }
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          display: block;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 70px;
+          background-color: #ebebeb;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .team .team-list>li {
+    @include gallery(3);
+    margin-bottom: 25px;
+  }
+}

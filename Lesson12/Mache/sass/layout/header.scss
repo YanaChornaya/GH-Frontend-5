@@ -1,0 +1,52 @@
+header {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+  .container {
+    padding: 40px 10px 0;
+  }
+  .logo {
+    display: block;
+    font: 900 25px ProximaNova, sans-serif;
+    text-align: center;
+    &:before {
+      content: "///";
+      color: #ed145b;
+    }
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slicknav_menu {
+    display: none;
+  }
+  header {
+    .logo {
+      display: inline-block;
+      float: left;
+      margin-top: 5px;
+    }
+    nav {
+      float: right;
+      display: inline-block;
+      li {
+        display: inline;
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          font: 700 16px Lato, sans-serif;
+          line-height: 38px;
+          &:hover {
+            color: #ed145b;
+          }
+        }
+      }
+    }
+  }
+}

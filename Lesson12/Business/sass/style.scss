@@ -1,0 +1,61 @@
+@import "compass/reset";
+@import "grids";
+@import "fonts";
+@import "../bower_components/font-awesome/scss/font-awesome";
+@import "layout/header1";
+@import "layout/header-menu";
+@import "landing/hero";
+@import "landing/about-us";
+@import "landing/our_approach";
+@import "landing/work";
+@import "landing/facebook-analisys";
+@import "landing/get-in-touch";
+@import "layout/footer";
+
+@include border-box-sizing;
+
+.container {
+  @include container;
+  padding: 55px 10px;
+  @media screen and (min-width: 768px) {
+    padding: 110px 10px;
+  }
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  color: #5c5c5c;
+  font: 400 14px OpenSans, sans-serif;
+  line-height: 22px;
+}
+
+.section-title {
+  font: 700 36px HelveticaNeue, sans-serif;
+  line-height: 36px;
+  color: #424242;
+  text-align: center;
+}
+
+.section-about {
+  font: 300 20px HelveticaNeue, sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  &:after {
+    content: "";
+    display: block;
+    width: 47px;
+    height: 5px;
+    margin: 15px auto 45px;
+    background-color: #424242;
+  }
+}
+
+
+

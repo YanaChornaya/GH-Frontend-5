@@ -1,0 +1,40 @@
+.services {
+  background-color: #d11f2d;
+  .services-list {
+    text-align: center;
+    li {
+      display: inline-block;
+      text-align: left;
+      width: 218px;
+      margin: 0 10px 35px;
+      .fa {
+        margin-right: 10px;
+        width: 42px;
+        height: 42px;
+        line-height: 40px;
+        font-size: 15px;
+        color: #000;
+        background-color: white;
+        border-radius: 2px 1px 1px 2px;
+        text-align: center;
+      }
+      h3 {
+        display: inline-block;
+        font: 700 16px OpenSans;
+      }
+      p {
+        max-width: 218px;
+        margin-top: 15px;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .services .services-list li {
+    @include gallery (3 of 12);
+  }
+}
+
+

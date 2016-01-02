@@ -1,0 +1,78 @@
+.contact {
+  background-color: #acd373;
+  .section-title {
+     color: #f7f7f7;;
+  }
+  .contact-form {
+    max-width: 570px;
+    margin: 0 auto;
+    li {
+      list-style-type: none;
+      label {
+        display: block;
+        color: #f7f7f7;
+        font: 400 18px SourceSansPro;
+        line-height: 24px;
+      }
+      input[type=text],
+      input[type=email],
+      textarea {
+        width: 100%;
+        height: 40px;
+        margin: 17px auto 36px;
+        padding: 5px 50px 0 24px;
+        line-height: 2;
+        background-color: #9abd67;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+      }
+      textarea {
+        height: 156px;
+        padding-top: 21px;
+      }
+      input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+        font: italic 15px DroidSerif;
+        color: #f7f7f7;
+      }
+      input:-moz-placeholder, textarea:-moz-placeholder {
+        font: italic 15px DroidSerif;
+        color: #f7f7f7;
+      }
+      input::-moz-placeholder, textarea::-moz-placeholder {
+        font: italic 15px DroidSerif;
+        color: #f7f7f7;
+      }
+      input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+        font: italic 15px DroidSerif;
+        color: #f7f7f7;
+      }
+    }
+    input[type=submit] {
+      display: block;
+      width: 110px;
+      height: 40px;
+      margin: 0 auto;
+      font: italic 18px DroidSerif;
+      border: 1px solid transparent;
+      background-color: #9abd67;
+      color: #f7f7f7;
+      cursor: pointer;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #f7f7f7;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact .contact-form input[type=submit] {
+    float: right;
+    margin: 0;
+  }
+}

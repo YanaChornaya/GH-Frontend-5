@@ -1,0 +1,66 @@
+.about {
+  position: relative;
+  background-color: #222;
+  .about-block {
+    text-align: center;
+    p {
+      max-width: 458px;
+      margin: 0 auto;
+      font-size: 16px;
+    }
+    .about-list {
+      margin-top: 40px;
+      li {
+        margin-bottom: 25px;
+      .fa {
+        width: 73px;
+        height: 72px;
+        line-height: 70px;
+        font-size: 35px;
+        color: #000;
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 100%;
+        text-align: center;
+      }
+        h3 {
+          font: 700 18px Montserrat, sans-serif;
+          padding-top: 15px;
+        }
+        .info {
+          font: 400 16px OpenSans, sans-serif;
+        }
+      }
+    }
+  }
+  .ipad {
+    float: right;
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    .about-block {
+      @include span (6 of 12);
+      text-align: left;
+      p {
+        margin: 0;
+      }
+      .about-list {
+        li {
+          margin-bottom: 55px;
+          .fa {
+            float: left;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .ipad {
+      @include span (6 of 12 last);
+      position: absolute;
+      right: 0;
+    }
+  }
+}

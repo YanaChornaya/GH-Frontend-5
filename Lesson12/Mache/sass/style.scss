@@ -1,0 +1,84 @@
+@import "compass/reset";
+@import "grids";
+@import "fonts";
+@import "../bower_components/font-awesome/scss/font-awesome";
+@import "layout/header";
+@import "landing/hero";
+@import "landing/about";
+@import "landing/services";
+@import "landing/quotes";
+@import "landing/prices";
+@import "landing/aditional-info";
+@import "landing/join-us";
+@import "landing/portfolio";
+@import "landing/aditional-info2";
+@import "landing/download";
+@import "layout/footer";
+
+@include border-box-sizing;
+
+.container {
+  @include container;
+  padding: 75px 10px 50px;
+  @media screen and (min-width: 768px) {
+    padding: 150px 10px;
+  }
+}
+
+body {
+  color: #5a5a5a;
+  font: 300 15px Lato, sans-serif;
+  line-height: 30px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:link, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-title {
+  font: italic 300 38px Lato, sans-serif;
+  line-height: 52px;
+  color: #5a5a5a;
+  text-align: center;
+}
+
+.section-title:after, h2:after {
+    content: "";
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    border-bottom: 2px solid #ed145b;
+    @media screen and (min-width: 768px) {
+      margin: 40px auto;
+     }
+}
+
+
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background-color: #ed145b;
+  border-radius: 24px;
+  font: 700 15px Lato, sans-serif;
+  line-height: 48px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  text-align: center;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #ed145b;
+    color: #ed145b;
+  }
+}
+
+

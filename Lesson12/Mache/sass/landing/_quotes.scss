@@ -1,0 +1,76 @@
+.quotes {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  .container {
+    padding: 100px 10px;
+  }
+  p {
+    max-width: 200px;
+    margin: 0 auto;
+    font: italic 300 20px Lato;
+    line-height: 30px;
+    text-align: justify;
+    white-space: pre-line;
+    &:before,
+    &:after {
+      content:'\201c';
+      display: block;
+      font: 700 58px DroidSerif;
+      height: 50px;
+      color: #ed145b;
+      text-align: center;
+    }
+    &:after {
+      content: "\201d";
+    }
+  }
+  .owl-theme .owl-controls .owl-buttons div.owl-prev {
+    position: absolute;
+    top:50%;
+    left: 0;
+    font-size: 30px;
+  }
+  .owl-theme .owl-controls .owl-buttons div.owl-next {
+    position: absolute;
+    top:50%;
+    right: 0;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .quotes p {
+    max-width: 450px;
+    line-height: 35px;
+    font-size: 25px;
+    text-align: center;
+    &:before,
+    &:after {
+      content:'\201c';
+      font-size :100px;
+      height: 70px;
+    }
+    &:after {
+      content: "\201d";
+    }
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .quotes p {
+    max-width: 824px;
+    line-height: 40px;
+    &:before,
+    &:after {
+      content:'\201c';
+      font-size :158px;
+      height: 150px;
+    }
+    &:after {
+      content: "\201d";
+    }
+  }
+}
+

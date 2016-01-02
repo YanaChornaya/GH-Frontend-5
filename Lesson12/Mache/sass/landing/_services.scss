@@ -1,0 +1,38 @@
+.services {
+  text-align: center;
+  p {
+    max-width: 681px;
+    margin: 0 auto;
+  }
+  .services-list {
+    margin-top: 30px;
+    text-align: center;
+    li {
+      margin: 20px 10px 0;
+      display: inline-block;
+      .services-img {
+        width: 131px;
+        height: 131px;
+        line-height: 131px;
+        margin: 0 auto;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 100%;
+        img {
+          vertical-align: middle;
+        }
+      }
+      h4 {
+        margin-top: 15px;
+        font: 400 15px Lato, sans-serif;
+        color: #ed145b;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services .services-list li {
+    @include gallery(3);
+  }
+}

@@ -1,0 +1,49 @@
+header {
+  background-color: #f0f2f4;
+  text-align: center;
+  .container {
+    padding: 15px 10px;
+  }
+  .contact-list {
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      color: #424242;
+      font: 400 15px Helvetica, sans-serif;
+      .fa {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      &:last-child {
+        margin-right: 0;
+        .fa {
+          width: 26px;
+          height: 26px;
+          line-height: 25px;
+          color: #fff;
+          background-color: #1287bf;
+          border-radius: 3px 2px 2px 3px;
+          border: 1px solid transparent;
+          -webkit-transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -o-transition: all 1s ease;
+          transition: all 1s ease;
+          &:hover {
+            color: #1287bf;
+            border: 1px solid #1287bf;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  header {
+    .contact-list {
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.download {
+  background-color: #f4f4f4;
+  text-align: center;
+  .download-block {
+    p {
+      max-width: 466px;
+      margin: 0 auto 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  .download {
+    text-align: left;
+    img {
+      @include span(7 of 12);
+    }
+    .download-block {
+      @include span(5 of 12 last);
+      .section-title {
+        text-align: left;
+        &:after {
+          content: "";
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.e-mail {
+  background-color: #acd373;
+  text-align: center;
+  .container {
+    padding: 46px 10px;
+  }
+  p {
+    font: 400 18px SourceSansPro;
+    margin-bottom: 15px;
+    color: #f7f7f7;
+  }
+  input[type=email] {
+    width: 180px;
+    height: 41px;
+    padding: 0 15px;
+    line-height: 20px;
+    background-color: #acd373;
+    border: 1px solid #f7f7f7;
+    color: #fff;
+  }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font: italic 14px DroidSerif;
+    color: #f7f7f7;
+  }
+  input:-moz-placeholder, textarea:-moz-placeholder {
+    font: italic 14px DroidSerif;
+    color: #f7f7f7;
+  }
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    font: italic 14px DroidSerif;
+    color: #f7f7f7;
+  }
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    font: italic 14px DroidSerif;
+    color: #f7f7f7;
+  }
+  input[type=submit] {
+    display: inline-block;
+    width: 49px;
+    height: 41px;
+    margin-left: -5px;
+    background: url(../images/envelope.png) no-repeat center #f7f7f7;
+    border: none;
+    cursor: pointer;
+    text-indent: -99999px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .e-mail {
+    p {
+      display: inline;
+      margin-right: 46px;
+    }
+  }
+}

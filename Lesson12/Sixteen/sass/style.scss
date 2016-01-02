@@ -1,0 +1,92 @@
+@import "compass/reset";
+@import "grids";
+@import "fonts";
+@import "../bower_components/font-awesome/scss/font-awesome";
+@import "layout/header";
+@import "landing/hero";
+@import "landing/video";
+@import "landing/services";
+@import "landing/who-we";
+@import "landing/team";
+@import "landing/join-us";
+@import "landing/works";
+@import "landing/clients";
+@import "landing/testimonials";
+@import "landing/blog";
+@import "landing/e-mail";
+@import "landing/map";
+@import "landing/contact";
+@import "layout/footer";
+
+
+@include border-box-sizing;
+
+.container {
+  @include container;
+  padding: 50px 10px;
+  @media screen and (min-width: 768px) {
+    padding: 100px 10px;
+  }
+}
+
+body {
+  font: 400 18px SourceSansPro, sans-serif;
+  color: #454545;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-title {
+  font: 400 30px SourceSansPro;
+  color: #454545;
+  text-transform: uppercase;
+  text-align: center;
+  span {
+    color: #acd373;
+  }
+}
+
+.circle-b, .circle-w {
+  position: relative;
+  display: block;
+  width: 10px;
+  margin: 15px auto;
+  text-align: center;
+  color: rgba(68, 68, 68, 0.9);
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    width: 60px;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.65);
+  }
+  &:before {
+    right: 100%;
+  }
+  &:after {
+    left: 100%;
+  }
+}
+
+.circle-w {
+  color: rgba(242, 242, 242, 0.9);
+  &:before,
+  &:after {
+    content: "";
+    border-bottom: 1px solid rgba(242, 242, 242, 0.9);
+  }
+}
+
+.quote {
+  font: 400 18px DroidSerif;
+  margin-top: 15px;
+  text-align: center;
+}

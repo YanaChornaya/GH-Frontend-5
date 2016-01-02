@@ -1,0 +1,94 @@
+.facebook-analysis {
+  background-color: #1287bf;
+  color: #fff;
+  text-align: center;
+  padding: 0 13px;
+  .section-title, .section-about {
+    color: #fff;
+  }
+  .section-about:after {
+    display: none;
+  }
+  .fa.fa-chevron-down {
+    font-size: 25px;
+    width: 64px;
+    height: 64px;
+    margin: 15px 0 45px;
+    line-height: 60px;
+    color: #fff;
+    border: 3px solid white;
+    border-radius: 100%;
+  }
+  .form-shape {
+    position: relative;
+    max-width: 683px;
+    margin: 0 auto;
+    padding-top: 80px;
+    background-color: white;
+    border-radius: 2px;
+    p {
+      max-width: 554px;
+      margin: 0 auto 25px;
+      padding: 0 10px;
+      color: #828282;
+      font: 400 15px Helvetica, sans-serif;
+      line-height: 22px;
+    }
+    .fa.fa-times {
+      position: absolute;
+      right: -20px;
+      top: -20px;
+      width: 49px;
+      height: 49px;
+      line-height: 45px;
+      font-size: 25px;
+      color: #fff;
+      background-color: #de2b24;
+      border: 2px solid white;
+      border-radius: 100%;
+    }
+    input[type=text] {
+      width: 80%;
+      height: 52px;
+      margin: 10px auto 0;
+      padding: 20px;
+      border: 1px solid #d8d8d8;
+      border-radius: 3px 2px 2px 3px;
+      &:hover {
+        border: 1px solid #1287bf;
+        box-shadow: 0 0 5px rgba(18, 135, 191, 0.66);
+      }
+    }
+    input[type=submit] {
+      display: inline-block;
+      width: 161px;
+      height: 46px;
+      font: 700 15px HelveticaNeue, sans-serif;
+      text-transform: uppercase;
+      line-height: 45px;
+      margin: 35px 0 60px;
+      background-color: #de2b24;
+      border-radius: 2px 3px 3px 2px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      &:hover {
+        background-color: #1287bf;
+      }
+    }
+    &:before {
+      content: "\25B2";
+      position: absolute;
+      top: -15px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      color: #fff;
+      font-size: 50px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.services {
+  background-color: #f7f7f7;
+  text-align: center;
+  .services-list {
+    margin-top: 50px;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 15px 35px;
+      vertical-align: top;
+      text-align: center;
+      .services-about {
+        margin-left: 20px;
+        vertical-align: top;
+        h4 {
+          color: #acd373;
+          font: 700 20px SourceSansPro;
+          text-transform: uppercase;
+        }
+        p {
+          max-width: 250px;
+          font: 400 18px SourceSanaPro;
+        }
+      }
+    }
+  }
+  .learn-more {
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 5px;
+    border: 1px solid #acd373;
+    text-align: center;
+    color: #acd373;
+    font: italic 18px DroidSerif;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+      &:hover {
+        background-color: #acd373;
+        color: #f7f7f7;
+      }
+  }
+}
+
+@media screen and (min-width: 475px) {
+  .services .services-list {
+    li {
+      margin-bottom: 60px;
+      text-align: left;
+      .services-about {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .services .services-list {
+    li {
+      text-align: center;
+      width: 350px;
+      .services-about {
+        text-align: left;
+      }
+    }
+  }
+}
+
+

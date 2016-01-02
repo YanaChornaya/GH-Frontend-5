@@ -1,0 +1,59 @@
+.work {
+  background-color: #de2b24;
+  color: #fff;
+  .section-title {
+    color:#fff;
+  }
+  .section-about {
+    color: #fff;
+    &:after {
+      content: "";
+      background-color: #fff;
+    }
+  }
+  .work-item {
+    text-align: center;
+    li {
+      position: relative;
+      display: inline-block;
+      max-width: 255px;
+      max-height: 253px;
+      margin: 0 -2px -8px;
+      overflow: hidden;
+      &:hover .work-hover {
+        opacity: 1;
+      }
+      .work-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: #f35e59;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        .fa {
+          display: inline-block;
+          font-size: 36px;
+          font-weight: 400;
+          margin-top: 75px;
+          opacity: 0.5;
+          color: white;
+
+        }
+        h3 {
+          font: 700 26px HelveticaNeue;
+          color: white;
+          margin-top: 15px;
+        }
+        a {
+          color: #fff;
+          font: 700 16px HelveticaNeue;
+        }
+      }
+    }
+  }
+}

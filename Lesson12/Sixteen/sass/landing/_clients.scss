@@ -1,0 +1,25 @@
+.clients {
+  background-color: #ebebeb;
+  .container {
+    padding: 40px 10px 30px;
+  }
+  .clients-list {
+    text-align: center;
+    li {
+      display: block;
+      margin: 0 10px 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .clients .clients-list li {
+    @include gallery(4);
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .clients .clients-list li {
+    @include gallery(2);
+  }
+}

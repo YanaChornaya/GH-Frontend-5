@@ -1,0 +1,52 @@
+.who-we {
+  background-color: #f7f7f7;
+  text-align: center;
+  .who-we-block {
+    .section-title {
+      display: inline-block;
+      margin: 15px 0 40px 10px;
+      vertical-align: middle;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+  }
+    .learn-more {
+      display: block;
+      width: 142px;
+      height: 40px;
+      margin: 25px auto 0;
+      padding-top: 5px;
+      font: italic 18px DroidSerif;
+      border: 1px solid #acd373;
+      color: #acd373;
+      text-align: center;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      &:hover {
+        background-color: #acd373;
+        color: #f7f7f7;
+      }
+    }
+  .iphone {
+    max-width: 150px;
+    max-height: 393px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .who-we {
+    .who-we-block {
+      @include span (9 of 12);
+      text-align: left;
+    }
+    .iphone {
+      @include span (3 of 12 last);
+    }
+    .learn-more {
+      float: left;
+    }
+  }
+}

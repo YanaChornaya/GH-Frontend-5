@@ -1,0 +1,52 @@
+.hero {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  padding: 75px 0 100px;
+  color: #fff;
+  text-align: center;
+  h2 {
+    font: 700 35px HelveticaNeue, sans-serif;
+    span {
+      display: block;
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+  .consultation {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    padding-top: 17px;
+    font: 700 15px HelveticaNeue, sans-serif;
+    background-color: #f8cd53;
+    color: #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    &:hover {
+      background-color: #dd2a24;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    h2 {
+      font-size: 48px;
+      span {
+        font-size: 30px;
+      }
+    }
+    .consultation {
+      width: 330px;
+      height: 69px;
+      margin-top: 48px;
+      padding-top: 23px;
+      font-size: 23px;
+    }
+  }
+}

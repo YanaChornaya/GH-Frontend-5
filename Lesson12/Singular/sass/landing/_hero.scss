@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  padding-top: 150px;
+  min-height: 550px;
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  text-align: center;
+  border-top: 10px solid #d11f2d;;
+  z-index: 2;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.95);
+    z-index: -1;
+  }
+  h2 {
+    font: 700 30px OpenSans, sans-serif;
+    line-height: 50px;
+    opacity: 0.9;
+    text-transform: uppercase;
+  }
+  p {
+    max-width: 589px;
+    font: 400 15px OpenSans, sans-serif;
+    margin: 24px auto 0;
+    line-height: 24px;
+  }
+  .introduction {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    opacity: 0.9;
+    font: 400 17px Raleway, sans-serif;
+    line-height: 20px;
+    text-transform: uppercase;
+    .fa {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .hero {
+    min-height: 900px;
+    padding-top: 314px;
+    h2 {
+      font-size: 40px;
+      line-height: 70px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .introduction {
+      bottom: 10%;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.our-approach {
+  background-color: #f3f3f3;
+  .approach-list {
+    text-align: center;
+    li {
+      position: relative;
+      display: inline-block;
+      max-width: 339px;
+      height: 460px;
+      vertical-align: bottom;
+      margin: 0 auto 25px;
+      padding: 20px 10px;
+      background-color: white;
+      border-radius: 3px 2px 2px 3px;
+      box-shadow: 0 0 5px #e2e2e2;
+      text-align: center;
+      .number {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 190px;
+        display: inline-block;
+        font: 700 60px Georgia, sans-serif;
+        width: 105px;
+        height: 105px;
+        background-color: #de2b24;
+        border: 2px solid white;
+        border-radius: 2px;
+        color: white;
+        text-align: center;
+        .step {
+          display: block;
+          font: 400 20px Helvetica;
+        }
+      }
+      h4 {
+        color: #424242;
+        font: 400 18px HelveticaBold, sans-serif;
+        line-height: 26px;
+        margin-top: 60px;
+      }
+      p {
+        max-width: 520px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-approach .approach-list {
+    text-align: left;
+    li {
+      display: block;
+      max-width: 1021px;
+      max-height: 236px;
+      margin: 0 auto 50px;
+      padding: 0;
+      background-color: white;
+      border-radius: 3px 2px 2px 3px;
+      box-shadow: 0 0 5px #e2e2e2;
+      &:nth-child(odd) {
+        img {
+          float: left;
+        }
+        .number {
+          top: 30%;
+          left: 285px;
+          right: auto;
+        }
+        h4 {
+          padding-top: 70px;
+          margin-left: 430px;
+          text-align: left;
+        }
+        p {
+          margin: 0 0 0 430px;
+          text-align: left;
+        }
+      }
+      &:nth-child(even) {
+        img {
+          float: right;
+        }
+        .number {
+          top: 30%;
+          left: auto;
+          right: 285px;
+          margin: 0;
+        }
+        h4 {
+          padding-top: 70px;
+          margin-right: 430px;
+          text-align: right;
+        }
+        p {
+          margin-right: 430px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

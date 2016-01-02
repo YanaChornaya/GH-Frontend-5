@@ -1,0 +1,26 @@
+.clients {
+  background-color: #f4f4f4;
+  text-align: center;
+  .section-title {
+    color: #222;
+  }
+  .clients-list {
+    margin-top: 50px;
+    text-align: center;
+    li {
+      margin: 0 10px 30px;
+      display: inline-block;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .clients .clients-list {
+    margin-top: 80px;
+    li {
+      @include gallery(2.4 of 12);
+    }
+  }
+}

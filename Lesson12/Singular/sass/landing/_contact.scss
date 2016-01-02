@@ -1,0 +1,47 @@
+.contact {
+  background-color: #d11f2d;
+  text-align: center;
+  p {
+    max-width: 920px;
+    margin: 0 auto;
+    font: 400 15px OpenSans;
+    line-height: 25px;
+  }
+  .contact-us {
+    display: inline-block;
+    width: 120px;
+    height: 44px;
+    margin-top: 35px;
+    color: #252525;
+    font: 700 18px OpenSans;
+    line-height: 40px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    p {
+      font-size: 20px;
+      line-height: 40px;
+    }
+    .contact-us {
+      width: 240px;
+      height: 64px;
+      margin-top: 70px;
+      font-size: 24px;
+      line-height: 60px;
+    }
+  }
+}

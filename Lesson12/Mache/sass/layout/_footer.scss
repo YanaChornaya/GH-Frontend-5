@@ -1,0 +1,31 @@
+footer {
+  background-color: #2b2b2b;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  .container {
+    padding: 60px 10px;
+  }
+    .designed {
+      display: block;
+      span {
+        font-weight: 700;
+        &:after {
+          content: ".";
+          color: #d53049;
+          font-size: 25px;
+        }
+      }
+    }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    .copyright {
+      float: left;
+    }
+    .designed {
+      float: right;
+    }
+  }
+}
