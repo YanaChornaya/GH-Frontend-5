@@ -1,0 +1,75 @@
+@import "compass/reset";
+@import "grids";
+@import "fonts";
+@import "layout/header";
+@import "layout/footer";
+@import "landing/hero";
+@import "landing/features";
+@import "landing/works";
+@import "landing/team";
+@import "landing/facts";
+@import "landing/discuss";
+@import "landing/map";
+@import "../bower_components/font-awesome/scss/font-awesome";
+
+@include border-box-sizing;
+
+.wrapper {
+  @include container;
+  padding: 100px 10px 50px;
+}
+
+body {
+  font: 400 13px OpenSans, sans-serif;
+  color: #062033;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+  font: 700 28px OpenSans, sans-serif;
+  color: #0eb493;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heart, .heart-w {
+  position: relative;
+  display: block;
+  font-size: 25px;
+  width: 50px;
+  margin: 25px auto 35px;
+  text-align: center;
+  opacity: 0.5;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    width: 90px;
+    border-bottom: 1px solid #000;
+    opacity: 0.5;
+  }
+  &:before {
+    right: 100%;
+  }
+  &:after {
+    left: 100%;
+  }
+}
+
+.heart-w {
+  opacity: 1;
+  &:before,
+  &:after {
+    content: "";
+    border-bottom: 1px solid #fff;
+  }
+}

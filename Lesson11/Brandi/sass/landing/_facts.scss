@@ -1,0 +1,52 @@
+.facts {
+  padding-bottom: 100px;
+  background: url(../images/facts.jpg);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  .facts-list {
+    li {
+      margin-bottom: 25px;
+      .fa {
+        width: 130px;
+        height: 130px;
+        line-height: 120px;
+        font-size: 40px;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        border-radius: 100%;
+      }
+      .number {
+        display: block;
+        margin-top: 15px;
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+      }
+      h4 {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .facts .facts-list li {
+    @include gallery(6 of 12);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .facts .facts-list li {
+    @include gallery (3 of 12);
+    .number {
+      margin-top: 50px;
+      font-size: 60px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+}

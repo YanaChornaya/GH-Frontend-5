@@ -1,0 +1,103 @@
+.hero {
+  height: 390px;
+  color: #fff;
+  text-align: center;
+  .slider1 {
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    padding: 150px 10px 50px;
+  }
+  .slider2 {
+    background: url(../images/bg1.jpg);
+    background-size: cover;
+    padding: 150px 10px 50px;
+  }
+  h2 {
+    font: 300 40px OpenSans, sans-serif;
+    span {
+      font-weight: 700;
+    }
+  }
+  h3 {
+    font-size: 25px;
+    font-weight: 300;
+    span {
+      color: #0feb9e;
+      &:before {
+        content: '/';
+      }
+    }
+  }
+  p {
+    font: 300 15px OpenSans, sans-serif;
+    margin-top: 15px;
+  }
+  .social {
+    margin-top: 50px;
+    li {
+      display: inline;
+      margin-right: 10px;
+      .fa {
+        font-size: 20px;
+        opacity: 0.3;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .owl-pagination {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+  }
+  .owl-theme .owl-controls .owl-page {
+    display: inline;
+    span {
+      background-color: white;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 725px;
+    .slider1, .slider2 {
+      padding: 364px 0 50px;
+    }
+    h2 {
+      font-size: 62px;
+    }
+    h3 {
+      font-size: 48px;
+    }
+    p {
+      position: relative;
+      max-width: 320px;
+      margin: 20px auto 0;
+      font-size: 18px;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        width: 30px;
+        border-bottom: 1px solid #0feb9e;;
+      }
+      &:before {
+        right: 100%;
+      }
+      &:after {
+        left: 100%;
+      }
+    }
+    .social {
+      margin-top: 110px;
+    }
+  }
+}

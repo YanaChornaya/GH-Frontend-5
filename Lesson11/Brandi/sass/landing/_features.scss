@@ -1,0 +1,35 @@
+.features {
+  background-color: #f4f7f9;
+  .features-list {
+    li {
+      margin-bottom: 20px;
+      h4 {
+        font: 600 20px OpenSans;
+      }
+      p {
+        margin-top: 10px;
+        padding: 0 20px 0 55px;
+        line-height: 21px;
+        opacity: 0.7;
+      }
+      .fa {
+        float: left;
+        margin-right: 15px;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        color: #0eb493;
+        border: 1px solid #0eb493;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features .features-list li {
+    @include gallery(4 of 12);
+  }
+}

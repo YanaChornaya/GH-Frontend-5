@@ -1,0 +1,30 @@
+header {
+    height: 90px;
+    background-color: #f6f9f9;
+    text-align: center;
+   .wrapper {
+      padding: 0 10px;
+      .logo {
+        display: inline-block;
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #2d3950;
+        img {
+          float: left;
+          margin-right: 15px;
+        }
+        span {
+          line-height: 35px;
+        }
+      }
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    float: left;
+  }
+}

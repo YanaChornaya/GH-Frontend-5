@@ -1,0 +1,129 @@
+.discuss {
+  text-align: center;
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    opacity: 0.8;
+  }
+  .contact-data {
+    h4 {
+      font-size: 22px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+    span {
+      margin-bottom: 15px;
+      display: block;
+      color: #6a737b;
+      line-height: 20px;
+    }
+  }
+  .say-hello {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    display: inline-block;
+    color: #062033;
+  }
+  .form-data {
+      input[type=text], input[type=email] {
+        width: 48%;
+        height: 25px;
+        padding: 0 5px;
+        border: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+      }
+      input[type=text] {
+        float: left;
+      }
+      input[type=email] {
+        float: right;
+      }
+      textarea {
+        width: 100%;
+        height: 50px;
+        margin-top: 50px;
+        padding:5px;
+        border: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+      }
+  }
+  .fa.fa-envelope-o {
+    font-size: 15px;
+    color: #0eb493;
+  }
+  .send-submit {
+    display: inline-block;
+    font: 400 16px OpenSans;
+    margin: 15px auto 15px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    line-height: 24px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    &:hover {
+      color: #1fa78d;
+      cursor: pointer;
+    }
+  }
+  .social {
+    li {
+      display: inline;
+      margin: 0 5px 15px 0;
+      .fa {
+        font-size: 25px;
+        opacity: 0.2;
+        color: #062033;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        &:hover {
+          color: #1fa78d;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .discuss {
+    text-align: left;
+    p {
+      margin-bottom: 80px;
+      text-align: center;
+    }
+    .contact-data {
+      @include span (3 of 12);
+    }
+    .contact {
+      @include span (8 of 12);
+      input[type=text] {
+        @include span (6 of 12);
+      }
+      input[type=email] {
+        @include span (6 of 12 last);
+      }
+      textarea {
+        @include span (12 of 12);
+      }
+    }
+    .send {
+      float: right;
+    }
+    .social {
+      @include span (1 of 12 last);
+      margin-top: 30px;
+      li {
+        display: block;
+      }
+    }
+  }
+}
