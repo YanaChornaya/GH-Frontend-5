@@ -3526,11 +3526,15 @@ header nav {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 22, ../sass/landing/_hero.scss */
+  /* line 21, ../sass/landing/_hero.scss */
+  .hero {
+    padding-top: 220px;
+  }
+  /* line 23, ../sass/landing/_hero.scss */
   .hero h2 {
     font-size: 48px;
   }
-  /* line 25, ../sass/landing/_hero.scss */
+  /* line 26, ../sass/landing/_hero.scss */
   .hero h3 {
     font-size: 24px;
     margin: 20px 0 130px;
@@ -3754,15 +3758,16 @@ header nav {
 }
 /* line 38, ../sass/landing/_team.scss */
 .team .team-list > li .social {
-  position: relative;
+  display: block;
+  height: 70px;
   padding-top: 20px;
-  z-index: 2;
+  background-color: #ebebeb;
 }
-/* line 42, ../sass/landing/_team.scss */
+/* line 43, ../sass/landing/_team.scss */
 .team .team-list > li .social li {
   display: inline-block;
 }
-/* line 44, ../sass/landing/_team.scss */
+/* line 45, ../sass/landing/_team.scss */
 .team .team-list > li .social li .fa {
   width: 28px;
   height: 28px;
@@ -3775,26 +3780,14 @@ header nav {
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
-/* line 55, ../sass/landing/_team.scss */
+/* line 56, ../sass/landing/_team.scss */
 .team .team-list > li .social li .fa:hover {
   color: #525252;
   background-color: transparent;
 }
-/* line 61, ../sass/landing/_team.scss */
-.team .team-list > li .social:after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background-color: #ebebeb;
-  z-index: -1;
-}
 
 @media screen and (min-width: 1024px) {
-  /* line 78, ../sass/landing/_team.scss */
+  /* line 68, ../sass/landing/_team.scss */
   .team .team-list > li {
     width: 23.72881%;
     float: left;
@@ -4206,9 +4199,8 @@ header nav {
   margin: 0 10px 25px;
   background-color: #ebebeb;
   vertical-align: top;
-  z-index: 2;
 }
-/* line 16, ../sass/landing/_blog.scss */
+/* line 15, ../sass/landing/_blog.scss */
 .blog .blog-list li .fa {
   position: absolute;
   top: 140px;
@@ -4218,45 +4210,47 @@ header nav {
   width: 60px;
   height: 60px;
   font-size: 25px;
-  line-height: 55px;
+  line-height: 50px;
   color: #fff;
   background-color: #acd373;
   border: 5px solid #ebebeb;
   border-radius: 100%;
 }
-/* line 31, ../sass/landing/_blog.scss */
+/* line 30, ../sass/landing/_blog.scss */
 .blog .blog-list li h4 {
   font: 600 18px SourceSansPro;
   padding: 40px 14px;
   color: #454545;
 }
-/* line 36, ../sass/landing/_blog.scss */
+/* line 35, ../sass/landing/_blog.scss */
 .blog .blog-list li .read-more {
   position: absolute;
-  bottom: 15px;
-  left: 0;
+  display: block;
+  height: 50px;
   right: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 15px;
   color: #f7f7f7;
   font: italic 14px DroidSerif;
-}
-/* line 44, ../sass/landing/_blog.scss */
-.blog .blog-list li:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
   background-color: #acd373;
-  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/* line 50, ../sass/landing/_blog.scss */
+.blog .blog-list li .read-more:hover {
+  padding-top: 10px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 1170px) {
-  /* line 61, ../sass/landing/_blog.scss */
+  /* line 62, ../sass/landing/_blog.scss */
   .blog .blog-list {
     margin-top: 57px;
   }
-  /* line 63, ../sass/landing/_blog.scss */
+  /* line 64, ../sass/landing/_blog.scss */
   .blog .blog-list li {
     width: 23.72881%;
     float: left;
@@ -4352,10 +4346,10 @@ header nav {
   }
 }
 /* line 1, ../sass/landing/_map.scss */
-.map {
-  background: url(../images/map.jpg);
-  background-size: cover;
+#map {
+  width: 100%;
   height: 500px;
+  background-color: #ccc;
 }
 
 /* line 1, ../sass/landing/_contact.scss */

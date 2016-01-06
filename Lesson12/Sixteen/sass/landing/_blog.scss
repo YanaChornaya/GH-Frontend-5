@@ -12,7 +12,6 @@
       margin: 0 10px 25px;
       background-color: #ebebeb;
       vertical-align: top;
-      z-index: 2;
       .fa {
         position: absolute;
         top: 140px;
@@ -22,7 +21,7 @@
         width: 60px;
         height: 60px;
         font-size: 25px;
-        line-height: 55px;
+        line-height: 50px;
         color: #fff;
         background-color: #acd373;
         border: 5px solid #ebebeb;
@@ -35,24 +34,26 @@
       }
       .read-more {
         position: absolute;
-        bottom: 15px;
-        left: 0;
+        display: block;
+        height: 50px;
         right: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 15px;
         color: #f7f7f7;
         font: italic 14px DroidSerif;
-      }
-        &:after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 50px;
-          background-color: #acd373;
-          z-index: -1;
+        background-color: #acd373;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        &:hover {
+          padding-top: 10px;
+          font-size: 20px;
         }
       }
     }
+   }
 }
 
 

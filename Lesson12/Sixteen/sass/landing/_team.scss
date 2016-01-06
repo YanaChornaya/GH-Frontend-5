@@ -36,9 +36,10 @@
         }
       }
       .social {
-        position: relative;
+        display: block;
+        height: 70px;
         padding-top: 20px;
-        z-index: 2;
+        background-color: #ebebeb;
         li {
           display: inline-block;
           .fa {
@@ -57,17 +58,6 @@
               background-color: transparent;
             }
           }
-        }
-        &:after {
-          content: "";
-          position: absolute;
-          display: block;
-          top:0;
-          left: 0;
-          width: 100%;
-          height: 70px;
-          background-color: #ebebeb;
-          z-index: -1;
         }
       }
     }
