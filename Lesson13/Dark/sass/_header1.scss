@@ -1,0 +1,66 @@
+header {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 992px;
+  height: 69px;
+  background-color: #212121;
+  border-bottom: 15px solid #101010;
+  z-index: 9999;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  h1 {
+    display: inline-block;
+    .logo {
+      width: 211px;
+      height: 54px;
+      display: block;
+      background-image: linear-gradient(to top, #313131 0%, #2a2a2a 100%);
+      text-shadow: 0 1px 1px rgba(0, 3, 1, 0.69);
+      color: #b85200;
+      font: 24px MyriadPro;
+      text-transform: uppercase;
+      img {
+        margin-top: 8px;
+        margin-left: 10px;
+        float: left;
+      }
+      span {
+        display: inline-block;
+        margin-top: 18px;
+      }
+    }
+  }
+  .nav-main {
+    display: none;
+  }
+}
+
+@media screen and (min-width:999px) {
+  .slicknav_menu {
+    display: none;
+  }
+  header {
+    .nav-main {
+      display: block;
+      float: right;
+      margin-right: 50px;
+      li {
+        display: inline-block;
+        a {
+          display: inline-block;
+          padding: 25px 10px 30px;
+          font: 400 12px AGLettericaCondensed, sans-serif;
+          text-transform: uppercase;
+           &:hover {
+             display: inline-block;
+             background: url('../images/nav.png') no-repeat;
+             padding: 25px 10px 30px;
+           }
+        }
+      }
+    }
+  }
+}
+
