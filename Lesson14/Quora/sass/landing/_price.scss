@@ -1,0 +1,111 @@
+.price {
+  position: relative;
+  padding-bottom: 150px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #fff;
+  &:after {
+    position: absolute;
+    left: -17px;
+    bottom: -62px;
+    content: "";
+    width: 55%;
+    transform: rotate(10deg);
+    border: 60px solid #204359;
+  }
+  &:before {
+    position: absolute;
+    right: -17px;
+    bottom: -62px;
+    content: "";
+    width: 55%;
+    transform: rotate(-10deg);
+    border: 60px solid #204359;
+  }
+  .price-list {
+    text-align: center;
+    margin: 50px 0;
+    color: black;
+    > li {
+      display: inline-block;
+      width: 300px;
+      padding: 20px 0;
+      margin-bottom: 15px;
+      background-color: #fc0;
+      vertical-align: middle;
+      .color {
+        display: block;
+        font: 700 26px Lato;
+        line-height: 72px;
+        color: white;
+        text-transform: uppercase;
+      }
+      .number {
+        font: 800 48px Lato;
+        &:before {
+          content: "$";
+          font: 400 24px Lato;
+          margin-top: 15px;
+          display: inline-block;
+          text-transform: uppercase;
+          vertical-align: top;
+        }
+      }
+      .line {
+        font: 700 24px Lato;
+      }
+      .month {
+        font: 700 14px Lato;
+      }
+      .price-services {
+        &:before {
+          content: "";
+          display: block;
+          width: 300px;
+          border-top: 1px solid #ffefb1;
+        }
+        li {
+          font: 400 18px Lato;
+          line-height: 72px;
+        }
+      }
+      .sign-up {
+        display: inline-block;
+        width: 168px;
+        height: 45px;
+        line-height: 45px;
+        padding-top: 12px;
+        margin: 10px 0;
+        background-color: black;
+        color: white;
+        font: 700 16px Lato;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: white;
+          color: black;
+          border: 1px solid black;
+        }
+      }
+    }
+    .middle-price {
+      background-color: #009bff;
+      border: 1px solid #009bff;
+      box-shadow: 0 0 7.5px 0.5px rgba(0, 0, 0, 0.23);
+      .fa {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 100%;
+      }
+    }
+  }
+}

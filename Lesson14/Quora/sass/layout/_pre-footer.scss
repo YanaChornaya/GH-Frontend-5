@@ -1,0 +1,112 @@
+.pre-footer {
+  padding: 50px 10px;
+  background-color: #204359;
+  text-align: center;
+  .contact, .navigation, .more-about, .newsletter {
+    display: inline-block;
+    margin: 0 50px 25px 0;
+    vertical-align: top;
+    text-align: left;
+    color: #9ab3cc;
+    font: 400 14px Lato;
+    line-height: 26px;
+    h4 {
+      font: 600 12px Lato;
+      line-height: 24px;
+      color: white;
+      text-transform: uppercase;
+      &:after {
+        content: "";
+        display: block;
+        width: 85px;
+        height: 1px;
+        margin: 5px 0;
+        background-color: #7eabc7;
+      }
+    }
+  }
+  .contact {
+    text-align: center;
+    @media screen and (min-width: 800px) {
+      text-align: left;
+    }
+    p {
+      max-width: 370px;
+      margin: 20px 0;
+    }
+    .contact-data li {
+        margin-bottom: 10px;
+      .address {
+        max-width: 156px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .fa {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .navigation-list, .more-about {
+    li {
+      margin-bottom: 10px;
+      a {
+        color: #9ab3cc;
+        font: 400 14px Lato;
+        line-height: 26px;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  .newsletter {
+    margin-right: 0;
+    p {
+      max-width: 265px;
+    }
+    form {
+      position: relative;
+      margin: 25px 0;
+      input[type=email] {
+        display: inline-block;
+        width: 270px;
+        height: 40px;
+        padding-left: 5px;
+        background-color: white;
+      }
+      input[type=submit] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 48px;
+        height: 40px;
+        background-color: #009bff;
+        border: none;
+        cursor: pointer;
+      }
+      .fa.fa-paper-plane {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    }
+    .social li {
+      display: inline-block;
+      margin-right: 15px;
+      .fa {
+        color: #94abc3;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

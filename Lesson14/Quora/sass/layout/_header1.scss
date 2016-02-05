@@ -1,0 +1,37 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
+  nav {
+    display: none;
+    @media screen and (min-width: 800px) {
+      display: inline-block;
+    }
+    li {
+      display: inline-block;
+       margin: 0 10px;
+      a {
+        display: inline-block;
+        width: 84px;
+        height: 93px;
+        padding-top: 25px;
+        color: white;
+        font: 400 18px Lato;
+        line-height: 24px;
+        &:hover {
+          background: url("../images/nav-hover.png") no-repeat;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .slicknav_menu {
+    display: none;
+  }
+}
+

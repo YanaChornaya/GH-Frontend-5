@@ -1,0 +1,55 @@
+@import "compass/reset";
+@import "grids";
+@import "fonts";
+
+@import "../bower_components/font-awesome/scss/font-awesome";
+
+@import "layout/header1";
+
+@import "landing/hero";
+@import "landing/about";
+@import "landing/services";
+@import "landing/project";
+@import "landing/blog";
+@import "landing/price";
+
+@import "layout/pre-footer";
+@import "layout/footer";
+
+@include border-box-sizing;
+
+body {
+  font: 400 16px Lato;
+  background-color: #ececec;
+}
+
+.container {
+  @include container;
+  padding: 0 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+.section-title {
+  padding-top: 80px;
+  text-align: center;
+  color: black;
+  font: 600 30px Lato;
+  line-height: 72px;
+  text-transform: uppercase;
+  &:after {
+    content: "";
+    display: block;
+    margin: 5px auto;
+    width: 100px;
+    height: 2px;
+    background-color: #d1d1d1;
+  }
+}
+

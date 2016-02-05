@@ -1,0 +1,48 @@
+footer {
+  position: relative;
+  text-align: center;
+  background-color: #204359;
+  overflow: hidden;
+  .arrow {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 52px;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 25px;
+    color: white;
+    background-color: #fc0;
+    border: 1px solid transparent;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        width: 1000px;
+        border-bottom: 1px solid #8b8b8b;
+      }
+      &:before {
+        right: 100%;
+      }
+      &:after {
+        left: 100%;
+      }
+    &:hover {
+      color: #fc0;
+      background-color: transparent;
+      border: 1px solid  #fc0;
+    }
+  }
+  .copyright {
+    display: block;
+    margin: 10px 0;
+    color: #748ca5;
+    font: 400 11px OpenSans;
+    text-transform: uppercase;
+  }
+}

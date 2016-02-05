@@ -1,0 +1,68 @@
+.about {
+  position: relative;
+  padding-bottom: 150px;
+  background-color: #ececec;
+  text-align: center;
+  overflow: hidden;
+  &:after {
+    position: absolute;
+    left: -17px;
+    bottom: -62px;
+    content: "";
+    width: 55%;
+    transform: rotate(10deg);
+    border: 60px solid #fff;
+  }
+  &:before {
+    position: absolute;
+    right: -17px;
+    bottom: -62px;
+    content: "";
+    width: 55%;
+    transform: rotate(-10deg);
+    border: 60px solid #fff;
+  }
+  .about-list {
+    margin: 80px 0 30px;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin-bottom: 20px;
+      vertical-align: top;
+      @media screen and (min-width:1048px) {
+        @include span (4 of 12);
+        &:last-child {
+          @include span (4 of 12 last);
+        }
+      }
+      &:nth-child(2n) .fa {
+        margin: 0 0 30px;
+      }
+      h4 {
+        margin-bottom: 10px;
+        font: 700 20px Raleway;
+        color: #333;
+        line-height: 28px;
+        text-transform: uppercase;
+      }
+      p {
+        max-width: 300px;
+        margin: 0 auto;
+        font: 400 14px Lato;
+        color: #6e6e6e;
+        line-height: 28px;
+      }
+      .fa {
+        display: inline-block;
+        width: 136px;
+        height: 158px;
+        font-size: 55px;
+        margin-top: 30px;
+        line-height: 158px;
+        color: white;
+        background: url("../images/polygon.png");
+      }
+    }
+  }
+}
+

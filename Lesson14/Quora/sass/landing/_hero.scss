@@ -1,0 +1,19 @@
+.hero {
+  position: relative;
+  background: url("../images/hero1.png") center no-repeat;
+  background-size: cover;
+  height: 729px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  h1 {
+    margin: 250px 0 25px;
+  }
+  h2 {
+    max-width: 750px;
+    margin: 0 auto;
+    font: italic 44px Lato;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+}

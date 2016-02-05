@@ -1,0 +1,89 @@
+.blog {
+  position: relative;
+  padding-bottom: 100px;
+  background-color: #ececec;
+  overflow: hidden;
+  &:after {
+    position: absolute;
+    left: -17px;
+    bottom: -62px;
+    content: "";
+    width: 55%;
+    transform: rotate(10deg);
+    border: 60px solid #fff;
+  }
+  &:before {
+    position: absolute;
+    right: -17px;
+    bottom: -62px;
+    content: "";
+    width: 55%;
+    transform: rotate(-10deg);
+    border: 60px solid #fff;
+  }
+  .blog-list {
+    margin: 25px auto;
+    text-align: center;
+    .grid-item {
+      margin-bottom: 15px;
+      padding-bottom: 25px;
+      background-color: white;
+      border-radius: 10px 9px 9px 10px;
+      text-align: left;
+      h4 {
+        margin: 10px 0;
+        padding-left: 15px;
+        font: 700 18px Lato;
+        line-height: 60px;
+        color: black;
+      }
+      p {
+        position: relative;
+        max-width: 225px;
+        padding: 0 0 15px 10px;
+        font: 400 16px Lato;
+        color: dimgrey;
+        line-height: 30px;
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          width: 270px;
+          padding: 5px 0;
+          border-bottom: 1px solid #d9d9d9;
+        }
+      }
+      .comments {
+        display: inline-block;
+        float: right;
+        padding: 10px 15px 0 0;
+      }
+      .number {
+        display: inline-block;
+        padding: 10px 0 0 15px;
+      }
+      .number-comments  {
+        color: #444;
+        font: 600 14px OpenSans;
+        &:hover {
+          color: #19394e;
+          border-bottom: 1px solid #19394e;
+        }
+      }
+      .number-like {
+        color: #595858;
+        font: 700 14px Lato;
+        &:hover {
+          color: #19394e;
+          border-bottom: 1px solid #19394e;
+        }
+      }
+      .fa {
+        display: inline-block;
+        font-size: 15px;
+        color: #4e4e4e;
+      }
+    }
+  }
+}

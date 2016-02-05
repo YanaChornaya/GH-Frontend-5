@@ -1,0 +1,35 @@
+.projects {
+  background-color: #fff;
+  text-align: center;
+  .project-about {
+    display: inline-block;
+    margin: 70px 30px 0 0;
+    vertical-align: top;
+    text-align: left;
+    h4 {
+      font: 700 20px Raleway;
+      margin-bottom: 20px;
+      line-height: 28px;
+      color: #333;
+      text-transform: uppercase;
+    }
+    p {
+      max-width: 599px;
+      margin-bottom: 20px;
+      color: #6e6e6e;
+      font: 400 16px Lato;
+      line-height: 28px;
+    }
+    .read-more {
+      display: inline-block;
+      width: 96px;
+      height: 27px;
+      line-height: 27px;
+      background: url("../images/read-more.png") no-repeat;
+      font: 400 12px Lato;
+      color: #009aff;
+      line-height: 26px;
+      text-align: center;
+    }
+  }
+}
