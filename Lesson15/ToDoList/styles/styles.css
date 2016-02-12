@@ -1,0 +1,65 @@
+.wrapper {
+	position: fixed;
+	width: 100%;
+	min-height: 768px;
+	text-align: center;
+	background: url(../images/bg.jpg);
+	background-size: cover;
+	color: #0F1722;
+}
+
+.container {
+	max-width: 400px;
+	margin: 150px auto 0;
+	padding: 25px 10px;
+	background-color: rgba(175,156,177,0.9);
+}
+
+h1 {
+	font-size: 35px;
+}
+
+#text {
+	width: 80%;
+	height: 30px;
+	padding-left: 10px;
+	background-color: white;
+}
+
+#text:focus {
+	outline: none;
+	border-color:#0F1722;
+}
+
+#button {
+	height: 35px;
+	background-color: #0F1722;
+	border: none;
+	cursor: pointer;
+	color: white;
+	outline: none;
+}
+
+#toDoList {
+	text-align: left;
+}
+
+#toDoList li {
+	list-style-type: none;
+	width: 80%;
+	border-bottom: 1px solid #0F1722;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+.fa {
+	float: right;
+	cursor: pointer;
+	color: #9D0000;
+}
+
+#check {
+    cursor: pointer;
+    margin-right: 10px;
+
+}

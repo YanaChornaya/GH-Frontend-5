@@ -1,0 +1,360 @@
+@import "compass/reset";
+@import "grids";
+@import "fonts";
+
+@import "layout/header1";
+@import "layout/pre-footer";
+@import "layout/footer";
+
+@import "../bower_components/font-awesome/scss/font-awesome";
+
+body {
+  background-color: #f6f6f6;
+}
+
+.container {
+  @include container;
+  padding: 0 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+.customNavigation {
+  .btn {
+    position: absolute;
+    top: 45%;
+    display: inline-block;
+    width: 46px;
+    height: 100px;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+    &:hover {
+      background-color: #ffeb00;
+    }
+    &:hover .fa {
+      color: black;
+    }
+  }
+  .btn.prev,
+  .btn.prev2 {
+    left: 0;
+  }
+  .btn.next,
+  .btn.next2 {
+    right: 0;
+  }
+  .fa {
+    color: white;
+    line-height: 100px;
+    font-size: 55px;
+  }
+}
+
+/*------------------------------HERO-------------------------*/
+.hero {
+  position: relative;
+  padding-bottom: 25px;
+  background: url("../images/bg.jpg") no-repeat center;
+  background-size: cover;
+  .hero-about {
+    margin: 90px auto 0 auto;
+    max-width: 600px;
+    text-align: center;
+    @media screen and (min-width: 800px) {
+      margin: 90px 0 0 25px;
+      height: 350px;
+      text-align: left;
+    }
+    @media screen and (min-width: 1120px) {
+      margin-top: 110px;
+      height: 500px;
+    }
+    h2 span {
+      display: inline-block;
+      margin-bottom: 5px;
+      padding: 0 10px;
+      background-color: #ffeb00;
+      color: black;
+      font: 400 40px CenturyGothic;
+      line-height: 55px;
+      text-transform: uppercase;
+      @media screen and (min-width: 1120px) {
+        font-size: 60px;
+        line-height: 85px;
+      }
+    }
+    h3 {
+      max-width: 375px;
+      margin: 0 auto;
+      @media screen and (min-width: 800px) {
+        margin: 0;
+      }
+      span {
+        display: inline-block;
+        padding: 0 10px;
+        background-color: #3f3f44;
+        color: white;
+        font: 400 18px CenturyGothic;
+        line-height: 33px;
+        border-bottom: 1px solid white;
+        &:last-child {
+          border: none;
+        }
+        @media screen and (min-width: 1120px) {
+          font-size: 24px;
+        }
+      }
+    }
+    .order {
+      display: inline-block;
+      width: 191px;
+      height: 40px;
+      margin: 25px 0;
+      background-color: black;
+      color: white;
+      font: 400 24px CenturyGothic;
+      line-height: 38px;
+      text-align: center;
+      border-bottom: 2px solid #ffea00;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      &:hover {
+        background-color: #ffea00;
+        color: black;
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+  .photo {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    @media screen and (min-width: 800px) {
+      display: inline-block;
+    }
+    li {
+      width: 100px;
+      float: left;
+      &:nth-child(4),
+      &:last-child{
+        clear: both;
+        margin-left: 100px;
+      }
+      &:nth-child(7) {
+        clear: both;
+      }
+      @media screen and (min-width: 1120px) {
+        width: 150px;
+        &:nth-child(4),
+        &:last-child{
+          margin-left: 150px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1230px) {
+    .customNavigation {
+      display: none;
+    }
+  }
+}
+
+/*-------------------------------CREATE-DESIGN-----------------------------*/
+.create-design {
+  padding-top: 90px;
+  color: #424147;
+  text-align: center;
+  .section-title {
+    font: 400 35px CenturyGothic;
+    text-transform: uppercase;
+  }
+  p {
+    font: 400 24px CenturyGothic;
+    margin: 10px 0 50px;
+  }
+  .design-list {
+    li {
+      position: relative;
+      display: inline-block;
+      height: 245px;
+      width: 250px;
+      margin: 0 10px 20px 10px;
+      padding-top: 45px;
+      background-color: #ffeb00;
+      text-align: center;
+      vertical-align: top;
+      &:first-child .design-title {
+        margin-bottom: 5px;
+      }
+      &:first-child .design-hover .design-description {
+        padding-top: 10px;
+      }
+      .fa {
+        color: #3f3f44;
+        font-size: 100px;
+      }
+      .design-title {
+        margin: 20px 0 25px;
+        font: 300 20px Code;
+        color: black;
+        text-transform: uppercase;
+      }
+      .design-about {
+        display: block;
+        padding: 25px 0;
+        font: 400 13px CenturyGothic;
+        background-color: #414146;
+        color: white;
+      }
+      .design-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: #414146;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        .design-description {
+          padding: 30px 10px 10px 15px;
+          h4 {
+            text-align: left;
+            font: 300 20px Code;
+            line-height: 23px;
+            a {
+              color: white;
+            }
+          }
+          span {
+            float: right;
+            font: 400 10px CenturyGothic;
+            line-height: 17px;
+            color: #ffea00;
+            &:before {
+              content: 'in ';
+              color: white;
+            }
+          }
+        }
+      }
+      &:hover .design-hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/*---------------------------WORK----------------------------*/
+.work {
+  padding-top: 75px;
+  text-align: center;
+  .section-title {
+    position: relative;
+    width: 159px;
+    padding: 5px 0;
+    margin: 25px auto;
+    background-color: #424147;
+    color: #ffea00;
+    font: 400 18px CenturyGothic;
+    text-transform: uppercase;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      width: 350px;
+      border-bottom: 1px solid #cacaca;
+      @media screen and (max-width: 1010px) {
+        width: 200px;
+      }
+      @media screen and (max-width: 615px) {
+        width: 50px;
+      }
+    }
+    &:before {
+      right: 110%;
+    }
+    &:after {
+      left: 110%;
+    }
+  }
+  p {
+    color: #424146;
+    font: 400 16px CenturyGothic;
+  }
+  .grid {
+    margin: 25px auto 0;
+  }
+}
+
+/*----------------------------CLIENTS---------------------*/
+.clients {
+  padding: 75px 10px;
+  position: relative;
+  text-align: center;
+  .section-title {
+    position: relative;
+    width: 159px;
+    padding: 5px 0;
+    margin: 25px auto;
+    background-color: #424147;
+    color: #ffea00;
+    font: 400 18px CenturyGothic;
+    text-transform: uppercase;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      width: 400px;
+      border-bottom: 1px solid #cacaca;
+      @media screen and (max-width: 1010px) {
+        width: 200px;
+      }
+      @media screen and (max-width: 615px) {
+        width: 50px;
+      }
+    }
+    &:before {
+      right: 110%;
+    }
+    &:after {
+      left: 110%;
+    }
+  }
+  p {
+    color: #424146;
+    font: 400 16px CenturyGothic;
+    margin-bottom: 25px;
+  }
+  .btn {
+    width: 46px;
+    height: 65px;
+    top: 64%;
+    z-index: 9999;
+    @media screen and (min-width: 461px) {
+      top: 61%;
+    }
+    @media screen and (min-width: 837px) {
+      top: 58%;
+    }
+    .fa {
+      font-size: 45px;
+      line-height: 65px;
+    }
+  }
+}

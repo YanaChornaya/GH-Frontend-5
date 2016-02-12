@@ -1,0 +1,39 @@
+header {
+  padding: 10px;
+  h1 {
+    text-align: center;
+  }
+  nav {
+    display: none;
+    float: right;
+    margin-top: 40px;
+    li {
+      display: inline-block;
+      margin-right: 50px;
+      a {
+        padding: 20px 10px;
+        color: black;
+        font: 300 16px Code;
+        line-height: 32px;
+        &:hover {
+          background-color: #ffea00;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .slicknav_menu {
+    display: none;
+  }
+  header {
+    nav {
+      display: inline-block;
+    }
+    h1 {
+      float: left;
+    }
+  }
+}
+

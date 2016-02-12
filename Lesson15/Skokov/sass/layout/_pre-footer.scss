@@ -1,0 +1,173 @@
+.pre-footer {
+  padding: 50px 10px;
+  background-color: #3f3f44;
+  font: 400 13px CenturyGothic;
+  line-height: 21px;
+  color: white;
+  text-align: center;
+  clear: both;
+  .container > div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-right: 13px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .pre-footer-title {
+    font: 400 18px CenturyGothic;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  .about {
+      max-width: 350px;
+    .learn-more {
+      display: inline-block;
+      width: 121px;
+      height: 37px;
+      font: 400 15px CenturyGothic;
+      margin: 25px 0;
+      line-height: 38px;
+      text-align: center;
+      background-color: black;
+      color: white;
+      border-bottom: 2px solid #ffea00;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      &:hover {
+        background-color: #ffea00;
+        color: black;
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+  .photo-stream {
+    margin: 15px 0 25px;
+    .pre-footer-title {
+      margin-bottom: 15px;
+    }
+    .photo-stream-list {
+      max-width: 350px;
+      li {
+        display: inline-block;
+      }
+      @media screen and (max-width: 1140px) {
+        text-align: center;
+        max-width: 400px;
+      }
+    }
+  }
+  .latest-tweets {
+    max-width: 400px;
+    li {
+      margin-bottom: 25px;
+      .fa {
+        float: left;
+        font-size: 25px;
+        margin-right: 10px;
+      }
+      .link-title, .link {
+        font: 400 13px CenturyGothic;
+        line-height: 21px;
+        color: white;
+        .tag {
+          color: #ffea00;;
+        }
+      }
+      .days {
+        display: block;
+        padding-left: 35px;
+        color: #ffea00;
+        font: 400 8px CenturyGothic;
+      }
+    }
+  }
+  .social-connecting {
+    margin: 25px 0;
+    text-align: center;
+    .pre-footer-title {
+      display: inline-block;
+    }
+    .social-list {
+      display: inline-block;
+      margin-left: 10px;
+      li {
+        display: inline-block;
+        .fa {
+          width: 30px;
+          height: 30px;
+          font-size: 20px;
+          color: white;
+          line-height: 30px;
+          background-color: black;
+          text-align: center;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+          &:hover {
+            color: #ffea00;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    margin-bottom: 50px;
+    max-width: 300px;
+    .contact-list {
+      li {
+        margin-bottom: 20px;
+        .fa {
+          width: 30px;
+          height: 30px;
+          float: left;
+          font-size: 20px;
+          margin-right: 10px;
+          color: white;
+          line-height: 30px;
+          background-color: black;
+          text-align: center;
+        }
+        .number-phone {
+          display: block;
+          margin-left: 90px;
+        }
+        .email-link {
+          color: #ffea00;
+        }
+      }
+    }
+  }
+  .follow {
+    max-width: 300px;
+    .pre-footer-title {
+      margin-bottom: 15px;
+    }
+    form {
+      margin-top: 15px;
+      input[type=email] {
+        border: none;
+        background-color: transparent;
+        width: 232px;
+        border-bottom: 2px solid #ffea00;
+        color: white;
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type=submit] {
+        border: none;
+        width: 28px;
+        height: 28px;
+        background: url("../images/email-icon.png") no-repeat center;
+        cursor: pointer;
+        vertical-align: top;
+        margin: -5px 0 0 -5px;
+      }
+    }
+  }
+}

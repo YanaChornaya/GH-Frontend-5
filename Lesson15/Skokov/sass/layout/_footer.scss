@@ -1,0 +1,30 @@
+footer {
+  padding: 15px 10px;
+  background-color: black;
+  text-align: center;
+  .copyright {
+    color: white;
+    font: 400 14px CenturyGothic;
+    line-height: 32px;
+    @media screen and (min-width: 930px) {
+      float: left;
+    }
+  }
+  .footer-nav {
+    li {
+      display: inline-block;
+      margin-right: 20px;
+      a {
+        color: white;
+        font: 300 16px Code;
+        line-height: 32px;
+        &:hover {
+          color: #ffea00;
+        }
+      }
+    }
+    @media screen and (min-width: 930px) {
+      float: right;
+    }
+  }
+}
