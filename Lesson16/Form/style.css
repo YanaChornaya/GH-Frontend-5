@@ -1,0 +1,61 @@
+body {
+	width: 800px;
+	margin: auto;
+}
+
+fieldset {
+	margin-bottom: 20px;
+}
+
+legend {
+	font-weight: bold;
+}
+
+ul {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+.briefly li {
+	margin-bottom: 15px;
+}
+
+.detail {
+	margin-top: 0;
+}
+
+.detail li {
+	font-size: 12px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.spam {
+	display: block;
+	font-weight: bold;
+}
+
+.submit {
+	margin-bottom: 15px;
+}
+
+.answer > div {
+	border: 2px solid grey;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.sleep {
+	text-align: center;
+}

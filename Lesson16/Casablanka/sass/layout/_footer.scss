@@ -1,0 +1,21 @@
+footer {
+  background-color: #222;
+  text-align: center;
+  clear: both;
+  .container {
+    padding: 50px 10px;
+  }
+  .copyright {
+    display: block;
+    margin-top: 20px;
+    color: #e4e4e4;
+    font: 400 16px Amble;
+    .author {
+      color: #d87843;
+      font-weight: 700;
+    }
+    .rules {
+      color: white;
+    }
+  }
+}
