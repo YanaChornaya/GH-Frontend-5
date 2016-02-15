@@ -3,8 +3,7 @@ $( function() {
         itemSelector: '.item',
         layoutMode: 'fitRows',
         masonry: {
-            columnWidth: 370,
-            isFitWidth: true
+            columnWidth: 'grid-sizer',
         }
     });
     $('.filters-button-group').on( 'click', 'a', function() {

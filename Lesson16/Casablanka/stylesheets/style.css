@@ -350,12 +350,28 @@ a:link, a:visited {
 #work .portfolio-items {
   margin: 50px auto 25px;
 }
-#work .portfolio-items li {
-  position: relative;
-  margin: 0 5px 10px 5px;
-  max-width: 370px;
+#work .portfolio-items .item,
+#work .portfolio-items .grid-sizer {
+  width: 100%;
 }
-#work .portfolio-items li .portfolio-hover {
+@media screen and (min-width: 800px) {
+  #work .portfolio-items .item,
+  #work .portfolio-items .grid-sizer {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1150px) {
+  #work .portfolio-items .item,
+  #work .portfolio-items .grid-sizer {
+    width: 33%;
+  }
+}
+#work .portfolio-items .portfolio-main {
+  position: relative;
+  margin: 0 auto 10px auto;
+  max-width: 350px;
+}
+#work .portfolio-items .portfolio-main .portfolio-hover {
   position: absolute;
   top: 0;
   left: 0;
@@ -374,11 +390,11 @@ a:link, a:visited {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-#work .portfolio-items li .portfolio-hover h3 {
+#work .portfolio-items .portfolio-main .portfolio-hover h3 {
   font: 400 18px BigJohn;
   line-height: 60px;
 }
-#work .portfolio-items li .portfolio-hover a {
+#work .portfolio-items .portfolio-main .portfolio-hover a {
   font: 400 24px Amble;
   line-height: 60px;
   color: white;
@@ -388,10 +404,10 @@ a:link, a:visited {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-#work .portfolio-items li .portfolio-hover a:hover {
+#work .portfolio-items .portfolio-main .portfolio-hover a:hover {
   color: #d87843;
 }
-#work .portfolio-items li .portfolio-hover a:after {
+#work .portfolio-items .portfolio-main .portfolio-hover a:after {
   content: '';
   display: block;
   width: 48px;
@@ -399,7 +415,7 @@ a:link, a:visited {
   margin: 25px auto 0;
   background-color: #d87843;
 }
-#work .portfolio-items li .portfolio-hover:hover {
+#work .portfolio-items .portfolio-main .portfolio-hover:hover {
   opacity: 1;
 }
 #work .show-more {
