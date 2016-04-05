@@ -97,8 +97,8 @@
                       <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                         <li>
                           <div class="single-wc-content wow fadeInUp">
-                            <?php $about_meta = get_post_meta(get_the_ID(), 'About-icon', true);
-                             if($about_meta) { ?>
+                            <?php $about_meta = get_post_meta(get_the_ID(), 'About-icon', true);?>
+                             <?php if($about_meta) { ?>
                                <span class="wc-icon <?php echo $about_meta?>" ></span >
                               <?php } ?>
                             <h4 class="wc-tittle"><?php the_title(); ?></h4>
@@ -498,14 +498,13 @@
 
             <div class="from-blog-content">
               <div class="row">
-                <?php if (have_posts()) :
-                while (have_posts()) : the_post(); ?>
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="col-md-4">
                   <article class="single-from-blog">
                     <figure>
                       <?php if ( has_post_thumbnail() ) {?>
                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                     <? } ?>
+                     <?php } ?>
                     </figure>
                     <div class="blog-title">
                       <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -526,7 +525,7 @@
                      </div>
                   </article>
                 </div>
-                <?php  endwhile; ?>
+                  <?php endwhile;?>
                 <?php endif; ?>
               </div>    
             </div>

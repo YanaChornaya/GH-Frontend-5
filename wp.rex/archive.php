@@ -72,7 +72,7 @@
                         <figure>
                           <?php if ( has_post_thumbnail() ) {?>
                             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                          <? } ?>
+                          <?php } ?>
                         </figure>
                         <div class="blog-title">
                           <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

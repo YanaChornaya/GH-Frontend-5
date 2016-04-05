@@ -83,7 +83,7 @@
                         <figure>
                           <?php if ( has_post_thumbnail() ) {?>
                             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                          <? } ?>
+                          <?php } ?>
                         </figure>
                         <div class="blog-details-content">
                           <?php the_content();?>
